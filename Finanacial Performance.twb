@@ -1,0 +1,1508 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0708.1337                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='76b1d3a5d4217585520c3f1f422f790a48bf35ebc81eddacd8b8dc54d259d365' _.fcp.WorkbookFingerprinting.true...creator-author-id='76b1d3a5d4217585520c3f1f422f790a48bf35ebc81eddacd8b8dc54d259d365' _.fcp.WorkbookFingerprinting.true...creator-license-type='free' _.fcp.WorkbookFingerprinting.true...creator-machine-id='0bc90ca488b9e3627be6bb4cc53ba405b9206f4367fd249d0e284e5fa24cf279' _.fcp.WorkbookFingerprinting.true...license-type='free' _.fcp.WorkbookFingerprinting.true...machine-id='0bc90ca488b9e3627be6bb4cc53ba405b9206f4367fd249d0e284e5fa24cf279' original-version='18.1' source-build='2026.2.1 (20262.26.0708.1337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Financial_Transactions+ (Financial_Capstone)' inline='true' name='federated.142ts1n0ck9ui71g9tr381e9ddjd' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='RISHIRAJ\SQLEXPRESS' name='sqlserver.1atxguu0srn02v1gczccj1uur9e8'>
+            <connection application-intent='false' authentication='sspi' class='sqlserver' dbname='Financial_Capstone' multi-subnet-failover='false' odbc-native-protocol='yes' one-time-sql='' server='RISHIRAJ\SQLEXPRESS' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='sqlserver.1atxguu0srn02v1gczccj1uur9e8' name='Financial_Transactions' table='[dbo].[Financial_Transactions]' type='table'>
+            <columns>
+              <column datatype='date' date-parse-format='dd-MM-yyyy' name='transaction_date' />
+            </columns>
+          </relation>
+          <relation connection='sqlserver.1atxguu0srn02v1gczccj1uur9e8' name='Budget' table='[dbo].[Budget]' type='table' />
+        </relation>
+        <cols>
+          <map key='[account_type]' value='[Financial_Transactions].[account_type]' />
+          <map key='[amount]' value='[Financial_Transactions].[amount]' />
+          <map key='[budgeted_expense]' value='[Budget].[budgeted_expense]' />
+          <map key='[budgeted_revenue]' value='[Budget].[budgeted_revenue]' />
+          <map key='[business_unit (Budget)]' value='[Budget].[business_unit]' />
+          <map key='[business_unit]' value='[Financial_Transactions].[business_unit]' />
+          <map key='[category]' value='[Financial_Transactions].[category]' />
+          <map key='[customer_id]' value='[Financial_Transactions].[customer_id]' />
+          <map key='[description]' value='[Financial_Transactions].[description]' />
+          <map key='[month]' value='[Budget].[month]' />
+          <map key='[region]' value='[Financial_Transactions].[region]' />
+          <map key='[transaction_date]' value='[Financial_Transactions].[transaction_date]' />
+          <map key='[transaction_id]' value='[Financial_Transactions].[transaction_id]' />
+          <map key='[vendor_id]' value='[Financial_Transactions].[vendor_id]' />
+          <map key='[year]' value='[Budget].[year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>transaction_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transaction_id]</local-name>
+            <parent-name>[Financial_Transactions]</parent-name>
+            <remote-alias>transaction_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transaction_date]</local-name>
+            <parent-name>[Financial_Transactions]</parent-name>
+            <remote-alias>transaction_date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[amount]</local-name>
+            <parent-name>[Financial_Transactions]</parent-name>
+            <remote-alias>amount</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <scale>2</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>account_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[account_type]</local-name>
+            <parent-name>[Financial_Transactions]</parent-name>
+            <remote-alias>account_type</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[Financial_Transactions]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_unit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[business_unit]</local-name>
+            <parent-name>[Financial_Transactions]</parent-name>
+            <remote-alias>business_unit</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[Financial_Transactions]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_id]</local-name>
+            <parent-name>[Financial_Transactions]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vendor_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[vendor_id]</local-name>
+            <parent-name>[Financial_Transactions]</parent-name>
+            <remote-alias>vendor_id</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[Financial_Transactions]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[Budget]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[Budget]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>business_unit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[business_unit (Budget)]</local-name>
+            <parent-name>[Budget]</parent-name>
+            <remote-alias>business_unit</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>budgeted_revenue</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[budgeted_revenue]</local-name>
+            <parent-name>[Budget]</parent-name>
+            <remote-alias>budgeted_revenue</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>budgeted_expense</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[budgeted_expense]</local-name>
+            <parent-name>[Budget]</parent-name>
+            <remote-alias>budgeted_expense</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Total Revenue' datatype='real' name='[Calculation_1692480441430016]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [account_type] = &apos;Revenue&apos; THEN [amount] ELSE 0 END' />
+      </column>
+      <column caption='Total Expenses' datatype='real' name='[Calculation_1692480441647105]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [account_type] = &apos;Expense&apos; THEN ABS([amount]) ELSE 0 END' />
+      </column>
+      <column caption='Actual Profit' datatype='real' name='[Calculation_1692480441786370]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_1692480441430016] - [Calculation_1692480441647105]' />
+      </column>
+      <column caption='Budget' datatype='table' name='[__tableau_internal_object_id__].[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C]' role='measure' type='quantitative' />
+      <column caption='Financial_Transactions' datatype='table' name='[__tableau_internal_object_id__].[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]' role='measure' type='quantitative' />
+      <column caption='Account Type' datatype='string' name='[account_type]' role='dimension' type='nominal' />
+      <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+      <column caption='Budgeted Expense' datatype='integer' name='[budgeted_expense]' role='measure' type='quantitative' />
+      <column caption='Budgeted Revenue' datatype='integer' name='[budgeted_revenue]' role='measure' type='quantitative' />
+      <column caption='business unit (Budget)' datatype='string' name='[business_unit (Budget)]' role='dimension' type='nominal' />
+      <column caption='Business Unit' datatype='string' name='[business_unit]' role='dimension' type='nominal' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Customer Id' datatype='string' name='[customer_id]' role='dimension' type='nominal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Month' datatype='integer' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Transaction Date' datatype='date' datatype-customized='true' name='[transaction_date]' role='dimension' type='ordinal' />
+      <column caption='Transaction Id' datatype='string' name='[transaction_id]' role='dimension' type='nominal' />
+      <column caption='Vendor Id' datatype='string' name='[vendor_id]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Content file/Financial Performance Capstone Project/Financial_Transactions+ (Financial_Capstone).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='10/18/2026 04:45:52 PM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E' table='[Extract].[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]' type='table'>
+              <columns>
+                <column datatype='date' date-parse-format='dd-MM-yyyy' name='transaction_date' />
+              </columns>
+            </relation>
+            <relation name='Budget_3B0BC414DDA64A4BBA467C0E81F3B99C' table='[Extract].[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C]' type='table' />
+          </relation>
+          <cols>
+            <map key='[account_type]' value='[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E].[account_type]' />
+            <map key='[amount]' value='[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E].[amount]' />
+            <map key='[budgeted_expense]' value='[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C].[budgeted_expense]' />
+            <map key='[budgeted_revenue]' value='[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C].[budgeted_revenue]' />
+            <map key='[business_unit (Budget)]' value='[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C].[business_unit]' />
+            <map key='[business_unit]' value='[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E].[business_unit]' />
+            <map key='[category]' value='[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E].[category]' />
+            <map key='[customer_id]' value='[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E].[customer_id]' />
+            <map key='[description]' value='[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E].[description]' />
+            <map key='[month]' value='[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C].[month]' />
+            <map key='[region]' value='[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E].[region]' />
+            <map key='[transaction_date]' value='[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E].[transaction_date]' />
+            <map key='[transaction_id]' value='[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E].[transaction_id]' />
+            <map key='[vendor_id]' value='[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E].[vendor_id]' />
+            <map key='[year]' value='[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C].[year]' />
+          </cols>
+          <refresh>
+            <refresh-event add-from-file-path='Financial_Transactions+ (Financial_Capstone)' increment-value='%null%' refresh-type='create' rows-inserted='10472' timestamp-start='2026-10-18 16:45:52.101' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>transaction_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[transaction_id]</local-name>
+              <parent-name>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</parent-name>
+              <remote-alias>transaction_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Financial_Transactions</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10400</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transaction_date</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[transaction_date]</local-name>
+              <parent-name>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</parent-name>
+              <remote-alias>transaction_date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Financial_Transactions</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[amount]</local-name>
+              <parent-name>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</parent-name>
+              <remote-alias>amount</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Financial_Transactions</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9965</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>account_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[account_type]</local-name>
+              <parent-name>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</parent-name>
+              <remote-alias>account_type</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Financial_Transactions</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[category]</local-name>
+              <parent-name>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</parent-name>
+              <remote-alias>category</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Financial_Transactions</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>business_unit</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[business_unit]</local-name>
+              <parent-name>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</parent-name>
+              <remote-alias>business_unit</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Financial_Transactions</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[region]</local-name>
+              <parent-name>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</parent-name>
+              <remote-alias>region</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Financial_Transactions</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_id]</local-name>
+              <parent-name>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</parent-name>
+              <remote-alias>customer_id</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Financial_Transactions</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>569</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vendor_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[vendor_id]</local-name>
+              <parent-name>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</parent-name>
+              <remote-alias>vendor_id</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Financial_Transactions</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>148</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[description]</local-name>
+              <parent-name>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</parent-name>
+              <remote-alias>description</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Financial_Transactions</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10400</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Budget</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Budget</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>business_unit</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[business_unit (Budget)]</local-name>
+              <parent-name>[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C]</parent-name>
+              <remote-alias>business_unit</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Budget</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>budgeted_revenue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[budgeted_revenue]</local-name>
+              <parent-name>[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C]</parent-name>
+              <remote-alias>budgeted_revenue</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Budget</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>72</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>budgeted_expense</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[budgeted_expense]</local-name>
+              <parent-name>[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C]</parent-name>
+              <remote-alias>budgeted_expense</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Budget</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>72</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Budget' id='Budget_3B0BC414DDA64A4BBA467C0E81F3B99C'>
+            <properties context=''>
+              <relation connection='sqlserver.1atxguu0srn02v1gczccj1uur9e8' name='Budget' table='[dbo].[Budget]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Budget_3B0BC414DDA64A4BBA467C0E81F3B99C' table='[Extract].[Budget_3B0BC414DDA64A4BBA467C0E81F3B99C]' type='table' />
+            </properties>
+          </object>
+          <object caption='Financial_Transactions' id='Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E'>
+            <properties context=''>
+              <relation connection='sqlserver.1atxguu0srn02v1gczccj1uur9e8' name='Financial_Transactions' table='[dbo].[Financial_Transactions]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='dd-MM-yyyy' name='transaction_date' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E' table='[Extract].[Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='dd-MM-yyyy' name='transaction_date' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[business_unit]' />
+              <expression op='[business_unit (Budget)]' />
+            </expression>
+            <first-end-point object-id='Financial_Transactions_7D3AA75CE832424AA755A567ED726A8E' />
+            <second-end-point object-id='Budget_3B0BC414DDA64A4BBA467C0E81F3B99C' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='KPI - Actual Profit'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='20'>Actual Profit</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial_Transactions+ (Financial_Capstone)' name='federated.142ts1n0ck9ui71g9tr381e9ddjd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.142ts1n0ck9ui71g9tr381e9ddjd'>
+            <column caption='Total Revenue' datatype='real' name='[Calculation_1692480441430016]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [account_type] = &apos;Revenue&apos; THEN [amount] ELSE 0 END' />
+            </column>
+            <column caption='Total Expenses' datatype='real' name='[Calculation_1692480441647105]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [account_type] = &apos;Expense&apos; THEN ABS([amount]) ELSE 0 END' />
+            </column>
+            <column caption='Actual Profit' datatype='real' name='[Calculation_1692480441786370]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1692480441430016] - [Calculation_1692480441647105]' />
+            </column>
+            <column caption='Account Type' datatype='string' name='[account_type]' role='dimension' type='nominal' />
+            <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1692480441786370]' derivation='Sum' name='[sum:Calculation_1692480441786370:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.142ts1n0ck9ui71g9tr381e9ddjd].[sum:Calculation_1692480441786370:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F493420C-8C35-4738-A29F-024966BC152B}' />
+    </worksheet>
+    <worksheet name='KPI - Total Expenses'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='20'>Total Expenses</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial_Transactions+ (Financial_Capstone)' name='federated.142ts1n0ck9ui71g9tr381e9ddjd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.142ts1n0ck9ui71g9tr381e9ddjd'>
+            <column caption='Total Expenses' datatype='real' name='[Calculation_1692480441647105]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [account_type] = &apos;Expense&apos; THEN ABS([amount]) ELSE 0 END' />
+            </column>
+            <column caption='Account Type' datatype='string' name='[account_type]' role='dimension' type='nominal' />
+            <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1692480441647105]' derivation='Sum' name='[sum:Calculation_1692480441647105:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.142ts1n0ck9ui71g9tr381e9ddjd].[sum:Calculation_1692480441647105:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9958BB2F-655F-4FC7-93E9-481EB5B124B5}' />
+    </worksheet>
+    <worksheet name='KPI - Total Revenue'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='20'>Total Revenue</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial_Transactions+ (Financial_Capstone)' name='federated.142ts1n0ck9ui71g9tr381e9ddjd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.142ts1n0ck9ui71g9tr381e9ddjd'>
+            <column caption='Total Revenue' datatype='real' name='[Calculation_1692480441430016]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [account_type] = &apos;Revenue&apos; THEN [amount] ELSE 0 END' />
+            </column>
+            <column caption='Account Type' datatype='string' name='[account_type]' role='dimension' type='nominal' />
+            <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1692480441430016]' derivation='Sum' name='[sum:Calculation_1692480441430016:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.142ts1n0ck9ui71g9tr381e9ddjd].[sum:Calculation_1692480441430016:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{45369CF8-3772-4CA8-84B0-C236695B884B}' />
+    </worksheet>
+    <worksheet name='Trend - Monthly Performance'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial_Transactions+ (Financial_Capstone)' name='federated.142ts1n0ck9ui71g9tr381e9ddjd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.142ts1n0ck9ui71g9tr381e9ddjd'>
+            <column caption='Total Revenue' datatype='real' name='[Calculation_1692480441430016]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [account_type] = &apos;Revenue&apos; THEN [amount] ELSE 0 END' />
+            </column>
+            <column caption='Total Expenses' datatype='real' name='[Calculation_1692480441647105]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [account_type] = &apos;Expense&apos; THEN ABS([amount]) ELSE 0 END' />
+            </column>
+            <column caption='Account Type' datatype='string' name='[account_type]' role='dimension' type='nominal' />
+            <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+            <column caption='Business Unit' datatype='string' name='[business_unit]' role='dimension' type='nominal' />
+            <column-instance column='[transaction_date]' derivation='Month' name='[mn:transaction_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[business_unit]' derivation='None' name='[none:business_unit:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1692480441430016]' derivation='Sum' name='[sum:Calculation_1692480441430016:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1692480441647105]' derivation='Sum' name='[sum:Calculation_1692480441647105:qk]' pivot='key' type='quantitative' />
+            <column caption='Transaction Date' datatype='date' datatype-customized='true' name='[transaction_date]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.142ts1n0ck9ui71g9tr381e9ddjd].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.142ts1n0ck9ui71g9tr381e9ddjd].[sum:Calculation_1692480441647105:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.142ts1n0ck9ui71g9tr381e9ddjd].[sum:Calculation_1692480441430016:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.142ts1n0ck9ui71g9tr381e9ddjd].[none:business_unit:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:business_unit:nk]' member='&quot;Enterprise&quot;' />
+              <groupfilter function='member' level='[none:business_unit:nk]' member='&quot;Online&quot;' />
+              <groupfilter function='member' level='[none:business_unit:nk]' member='&quot;Retail&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.142ts1n0ck9ui71g9tr381e9ddjd].[:Measure Names]</column>
+            <column>[federated.142ts1n0ck9ui71g9tr381e9ddjd].[none:business_unit:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.142ts1n0ck9ui71g9tr381e9ddjd].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.142ts1n0ck9ui71g9tr381e9ddjd].[Multiple Values]</rows>
+        <cols>[federated.142ts1n0ck9ui71g9tr381e9ddjd].[mn:transaction_date:ok]</cols>
+      </table>
+      <simple-id uuid='{B428F929-1249-46A5-BB61-2713486CF8B7}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Financial_Transactions+ (Financial_Capstone)' name='federated.142ts1n0ck9ui71g9tr381e9ddjd' />
+      </datasources>
+      <datasource-dependencies datasource='federated.142ts1n0ck9ui71g9tr381e9ddjd'>
+        <column caption='Business Unit' datatype='string' name='[business_unit]' role='dimension' type='nominal' />
+        <column-instance column='[business_unit]' derivation='None' name='[none:business_unit:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98244' id='10' param='horz' type-v2='layout-flow' w='99034' x='483' y='878'>
+            <zone h='98244' id='8' type-v2='layout-basic' w='89378' x='483' y='878'>
+              <zone h='49067' id='3' name='KPI - Actual Profit' w='28847' x='483' y='878'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49067' id='5' name='KPI - Total Revenue' w='33253' x='29330' y='878'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49067' id='6' name='KPI - Total Expenses' w='27278' x='62583' y='878'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49177' id='7' name='Trend - Monthly Performance' w='89378' x='483' y='49945'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98244' id='9' is-fixed='true' param='vert' type-v2='layout-flow' w='9656' x='89861' y='878'>
+              <zone h='7903' id='11' name='Trend - Monthly Performance' pane-specification-id='0' param='[federated.142ts1n0ck9ui71g9tr381e9ddjd].[:Measure Names]' type-v2='color' w='9656' x='89861' y='878'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='14050' id='12' name='Trend - Monthly Performance' param='[federated.142ts1n0ck9ui71g9tr381e9ddjd].[none:business_unit:nk]' type-v2='filter' values='database' w='9656' x='89861' y='8781'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98244' id='17' param='vert' type-v2='layout-flow' w='99034' x='483' y='878'>
+                <zone fixed-size='280' h='49067' id='3' is-fixed='true' name='KPI - Actual Profit' w='28847' x='483' y='878'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49067' id='5' is-fixed='true' name='KPI - Total Revenue' w='33253' x='29330' y='878'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49067' id='6' is-fixed='true' name='KPI - Total Expenses' w='27278' x='62583' y='878'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='14050' id='12' mode='checkdropdown' name='Trend - Monthly Performance' param='[federated.142ts1n0ck9ui71g9tr381e9ddjd].[none:business_unit:nk]' type-v2='filter' values='database' w='9656' x='89861' y='8781'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49177' id='7' is-fixed='true' name='Trend - Monthly Performance' w='89378' x='483' y='49945'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7903' id='11' name='Trend - Monthly Performance' pane-specification-id='0' param='[federated.142ts1n0ck9ui71g9tr381e9ddjd].[:Measure Names]' type-v2='color' w='9656' x='89861' y='878'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C9272221-537C-4042-9FD1-AE1F951C32F8}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='KPI - Actual Profit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{914AA7E8-CBAF-4B5D-8D09-42DDC653AEAD}' />
+    </window>
+    <window class='worksheet' name='KPI - Total Revenue'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2C3DA22D-3AD5-42F7-A682-16E945AD211E}' />
+    </window>
+    <window class='worksheet' name='KPI - Total Expenses'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6849460A-F245-40AF-85EF-FF296E3B3EDA}' />
+    </window>
+    <window class='worksheet' name='Trend - Monthly Performance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.142ts1n0ck9ui71g9tr381e9ddjd].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.142ts1n0ck9ui71g9tr381e9ddjd].[:Measure Names]</field>
+            <field>[federated.142ts1n0ck9ui71g9tr381e9ddjd].[none:business_unit:nk]</field>
+            <field>[federated.142ts1n0ck9ui71g9tr381e9ddjd].[yr:transaction_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E636C954-F5A1-45B3-9D87-FD4AA8CD1BC3}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='KPI - Actual Profit'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Total Expenses'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Total Revenue'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields />
+                    <y-fields />
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.142ts1n0ck9ui71g9tr381e9ddjd].[sum:Calculation_1692480441430016:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>864608592.20000064</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Trend - Monthly Performance'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{40C561E5-8B91-4750-9BB9-AE1D26E59CE4}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+    <thumbnail height='25' name='KPI - Actual Profit' width='104'>
+      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
+      QJzo7gAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='25' name='KPI - Total Expenses' width='104'>
+      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
+    </thumbnail>
+    <thumbnail height='25' name='KPI - Total Revenue' width='104'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Trend - Monthly Performance' width='192'>
+      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
+      PNIDef4/MDT3H43jX/sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
